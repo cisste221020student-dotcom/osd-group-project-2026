@@ -6,26 +6,26 @@ const members = [
         username: "ayarzamit",
         role: "Group Leader",
         contribution: "Project Setup & Coordination",
-        image: "https://via.placeholder.com/150?text=AYZ"   // ← Change to your real image
+        image: "https://via.placeholder.com/150?text=AYZ"   // ← Replace with your real image link
     },
     {
         name: "Idris Maikano Idris",
         username: "Maikano47",
         role: "Group Member",
         contribution: "Profile Card Added | Reg No: CIS/STE/22/1017",
-        image: "https://via.placeholder.com/150?text=IMI"   // ← Change to real image
+        image: "https://via.placeholder.com/150?text=IMI"   // ← Replace with your real image link
     },
     {
         name: "Member Full Name 3",
         username: "githubusername3",
         role: "Group Member",
         contribution: "Added my profile card",
-        image: "https://via.placeholder.com/150?text=M3"    // ← Change to real image
+        image: "https://via.placeholder.com/150?text=M3"    // ← Replace with your real image link
     }
     // Add more members here with their image field
 ];
 
-// Theme Toggle
+// Theme Toggle (Unchanged)
 const button = document.getElementById("theme-toggle");
 
 // Load saved theme
@@ -33,7 +33,7 @@ if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark-mode");
 }
 
-// Theme Toggle Event
+// Theme Toggle Event (Unchanged)
 button.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
     if (document.body.classList.contains("dark-mode")) {
@@ -43,10 +43,10 @@ button.addEventListener("click", () => {
     }
 });
 
-// Display members with profile images
+// Display members with Profile Images (Member 8)
 function displayMembers() {
     const grid = document.getElementById('membersGrid');
-    if (!grid) return; // Safety check
+    if (!grid) return;
 
     grid.innerHTML = '';
     
